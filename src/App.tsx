@@ -1,6 +1,6 @@
 import { Button, message } from 'antd';
 import React, {Component} from 'react';
-import Home from './home/index';
+import Home from '@/pages/home/index';
 
 class App extends Component {
   render() {
