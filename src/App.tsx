@@ -1,15 +1,17 @@
-import { Button, message } from 'antd';
 import React, {Component} from 'react';
-import Home from '@/pages/home/index';
+import { HashRouter, useRoutes } from 'react-router-dom';
+import routes from '@/router/router';
+ 
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Home/>
-      </div>
-    );
-  }
+function App() {
+  const Outlet=useRoutes(routes)
+  return (
+    <div className="App">
+      {Outlet}
+    </div>
+  );
 }
+  
+
 
 export default App;
