@@ -25,7 +25,6 @@ function Home() {
     lineHeight: '120px',
     color: '#fff',
     backgroundColor: '#d3dce6',
-    height: '100vh',
   }
 
   const footerStyle: React.CSSProperties = {
@@ -35,7 +34,7 @@ function Home() {
   }
   return (
     <Layout style={{ minHeight: '100vh' }}>
-      <Sider>
+      <Sider style={siderStyle}>
         <div className="logo"></div>
         <MainMenu />
       </Sider>
